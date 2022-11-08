@@ -10,7 +10,14 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		
 		features = "src/test/java/features",
-		glue = {"stepdefination"}
+		glue = {"stepdefination"},
+		//tags={"@Regression","@Sanity"}  //and operator
+		tags={"@Regression"},  //or operator
+		monochrome = true,  //show the formatted output in console
+		dryRun = false,
+		plugin = {"pretty" ,"html:target/htmlreport","json:target/report.json"}
+		
+		
 		)
 
 public class testrunnerclass {

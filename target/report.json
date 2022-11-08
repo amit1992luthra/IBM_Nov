@@ -1,0 +1,219 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-11-08T06:45:23.511Z",
+        "line": 3,
+        "name": "login facebook with valid credentials",
+        "description": "",
+        "id": "facebook-login;login-facebook-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3580429400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigates to facebook application",
+            "match": {
+              "location": "stepdefinationclass.user_navigates_to_facebook_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 60100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters valid credentials",
+            "match": {
+              "location": "stepdefinationclass.user_enters_valid_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user logged in successfully",
+            "match": {
+              "location": "stepdefinationclass.user_logged_in_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Sanity"
+          },
+          {
+            "name": "@active"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-08T06:45:27.114Z",
+        "line": 17,
+        "name": "Login facebook with invalid credentials",
+        "description": "",
+        "id": "facebook-login;login-facebook-with-invalid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2288102300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User navigates to facebook application",
+            "match": {
+              "location": "stepdefinationclass.user_navigates_to_facebook_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 876152600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enter \"amit\" username and \"xyz\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"amit\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"xyz\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefinationclass.user_enter_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "user clicks on ok button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16100,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user gets validation message",
+            "match": {
+              "location": "stepdefinationclass.user_gets_validation_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@amit"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-08T06:45:30.291Z",
+        "line": 18,
+        "name": "Login facebook with invalid credentials",
+        "description": "",
+        "id": "facebook-login;login-facebook-with-invalid-credentials;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2222156700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User navigates to facebook application",
+            "match": {
+              "location": "stepdefinationclass.user_navigates_to_facebook_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 883383900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enter \"abc\" username and \"123\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abc\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"123\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinationclass.user_enter_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "user clicks on ok button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5600,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user gets validation message",
+            "match": {
+              "location": "stepdefinationclass.user_gets_validation_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@amit"
+          }
+        ]
+      }
+    ],
+    "name": "facebook login",
+    "description": "",
+    "id": "facebook-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/ibm.feature",
+    "tags": []
+  }
+]

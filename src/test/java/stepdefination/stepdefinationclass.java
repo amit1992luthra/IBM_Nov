@@ -1,5 +1,6 @@
 package stepdefination;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -22,27 +23,31 @@ public class stepdefinationclass {
 	
 	@When("user enters valid credentials")
 	public void user_enters_valid_credentials() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+	   
 	}
 
 	@Then("user logged in successfully")
 	public void user_logged_in_successfully() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+	    
 	}
 
 	@When("user enters invalid credentials")
 	public void user_enters_invalid_credentials() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+	   
 	}
 
 	@Then("user gets validation message")
 	public void user_gets_validation_message() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+	    
 	}
+	
+	@When("user enter {string} username and {string} password")
+	public void user_enter_username_and_password(String username, String pass) {
+	    driver.findElement(By.id("email")).sendKeys(username);
+	    driver.findElement(By.id("pass")).sendKeys(pass);
+	    driver.quit();
+	}
+	
 
 
 
