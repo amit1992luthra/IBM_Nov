@@ -7,17 +7,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import hooks.hooksclass;
 
 public class stepdefinationclass {
 	
-	WebDriver driver;
+	WebDriver driver = hooksclass.driver;
 	
 	
 	@Given("User navigates to facebook application")
 	public void user_navigates_to_facebook_application() {
 	   System.out.println("user is navigating to the facebook application");
-	   System.setProperty("webdriver.chrome.driver", ".\\lib\\chromedriver.exe");
-	   driver = new ChromeDriver();
+	   
 	   driver.get("https://www.facebook.com/");
 	}
 	

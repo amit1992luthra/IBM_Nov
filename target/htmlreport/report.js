@@ -20,6 +20,9 @@ formatter.scenario({
     }
   ]
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
   "name": "User navigates to facebook application",
   "keyword": "Given "
@@ -48,6 +51,9 @@ formatter.match({
   "location": "stepdefinationclass.user_logged_in_successfully()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -117,6 +123,9 @@ formatter.scenario({
     }
   ]
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
   "name": "User navigates to facebook application",
   "keyword": "Given "
@@ -155,6 +164,9 @@ formatter.match({
 formatter.result({
   "status": "skipped"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.scenario({
   "name": "Login facebook with invalid credentials",
   "description": "",
@@ -167,6 +179,9 @@ formatter.scenario({
       "name": "@amit"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User navigates to facebook application",
@@ -205,5 +220,8 @@ formatter.match({
 });
 formatter.result({
   "status": "skipped"
+});
+formatter.after({
+  "status": "passed"
 });
 });

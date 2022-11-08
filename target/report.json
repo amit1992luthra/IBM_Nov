@@ -3,17 +3,39 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-11-08T06:45:23.511Z",
+        "start_timestamp": "2022-11-08T07:17:40.911Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3382398600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksclass.init()"
+            }
+          }
+        ],
         "line": 3,
         "name": "login facebook with valid credentials",
         "description": "",
         "id": "facebook-login;login-facebook-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 656810800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksclass.quit()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3580429400,
+              "duration": 1433780300,
               "status": "passed"
             },
             "line": 4,
@@ -25,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 60100,
+              "duration": 77400,
               "status": "passed"
             },
             "line": 5,
@@ -37,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 28600,
+              "duration": 12600,
               "status": "passed"
             },
             "line": 6,
@@ -61,17 +83,39 @@
         ]
       },
       {
-        "start_timestamp": "2022-11-08T06:45:27.114Z",
+        "start_timestamp": "2022-11-08T07:17:46.418Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1182686500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksclass.init()"
+            }
+          }
+        ],
         "line": 17,
         "name": "Login facebook with invalid credentials",
         "description": "",
         "id": "facebook-login;login-facebook-with-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 64400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksclass.quit()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2288102300,
+              "duration": 1909285100,
               "status": "passed"
             },
             "line": 10,
@@ -83,7 +127,7 @@
           },
           {
             "result": {
-              "duration": 876152600,
+              "duration": 885073800,
               "status": "passed"
             },
             "line": 11,
@@ -114,7 +158,7 @@
           },
           {
             "result": {
-              "duration": 16100,
+              "duration": 8700,
               "status": "skipped"
             },
             "line": 13,
@@ -135,17 +179,39 @@
         ]
       },
       {
-        "start_timestamp": "2022-11-08T06:45:30.291Z",
+        "start_timestamp": "2022-11-08T07:17:50.405Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1195759700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksclass.init()"
+            }
+          }
+        ],
         "line": 18,
         "name": "Login facebook with invalid credentials",
         "description": "",
         "id": "facebook-login;login-facebook-with-invalid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 173200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksclass.quit()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2222156700,
+              "duration": 1241095700,
               "status": "passed"
             },
             "line": 10,
@@ -157,7 +223,7 @@
           },
           {
             "result": {
-              "duration": 883383900,
+              "duration": 859976600,
               "status": "passed"
             },
             "line": 11,
@@ -188,7 +254,7 @@
           },
           {
             "result": {
-              "duration": 5600,
+              "duration": 4800,
               "status": "skipped"
             },
             "line": 13,
